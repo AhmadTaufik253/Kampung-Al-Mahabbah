@@ -60,8 +60,8 @@
             <div class="row ">
                 <div class="col-md-12">
                     <p class="text-lead text-light">Welcome To</p>
-                    <h1 class="display-4 text-hero text-light">SISTEM INFORMASI</h1>
-                    <h1 class="display-4 text-hero text-light">KAMPUNG AL MAHABBAH</h1>
+                    <h1 class="display-4 text-hero text-light animated-text-hero">SISTEM INFORMASI</h1>
+                    <h1 class="display-4 text-hero text-light animated-text-hero">KAMPUNG AL MAHABBAH</h1>
                     <a href="#contactUs"class="btn btn-primary">Contact Us</a>
                     
                         
@@ -623,6 +623,15 @@
         // Tambahkan pop-up untuk marker
         marker.bindPopup("<b>Halo!</b><br>Selamat datang di kampung al mahabbah.").openPopup();
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var animatedTexts = document.querySelectorAll('.animated-text-hero');
+        animatedTexts.forEach(function(element) {
+            element.classList.add('animated-hero');
+        });
+    });
+</script>
 
 
     <script>

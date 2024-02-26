@@ -267,3 +267,13 @@
 }
 
 
+.animated-text-hero {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+
+.animated-text-hero.animated-hero {
+    opacity: 1;
+    transform: translateY(0);
+}
