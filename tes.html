@@ -1,532 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animate on Scroll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    /* CSS untuk menambahkan style pada section */
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    /* CSS untuk menambahkan style pada elemen yang akan diberi animasi */
+    .animated-box {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .animated-box img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+    .content {
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-    <div style="width: 100%; height: 100%; position: relative; background: rgba(0, 0, 0, 0.25); backdrop-filter: blur(10px)">
-        <div style="left: 100px; top: 31px; position: absolute"><span style="color: white; font-size: 28px; font-family: Viga; font-weight: 400; word-wrap: break-word">NAMA</span><span style="color: #394570; font-size: 28px; font-family: Viga; font-weight: 400; word-wrap: break-word">DESA</span></div>
-        <div style="left: 694px; top: 36px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
-            <div style="color: rgba(255, 255, 255, 0.70); font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Home</div>
-            <div style="color: rgba(255, 255, 255, 0.70); font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">About</div>
-            <div style="color: rgba(255, 255, 255, 0.70); font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Service</div>
-            <div style="color: rgba(255, 255, 255, 0.70); font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Citizens</div>
-            <div style="color: rgba(255, 255, 255, 0.70); font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Gallery</div>
-        </div>
-        <div style="width: 24px; height: 24px; left: 1156px; top: 38px; position: absolute">
-            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; border: 2px #F3EFFA solid"></div>
-        </div>
+
+<section id="section1">
+  <div class="container">
+    <div class="animated-box animate__animated animate__bounceIn">Elemen dengan animasi saat scroll</div>
+  </div>
+</section>
+
+<section id="section2">
+  <div class="container">
+    <h2 class="section-title">Section 2</h2>
+    <div class="content animate__animated"> <!-- Tambahkan kelas animate__animated di sini -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mi in magna lacinia dapibus. Curabitur bibendum elit id ante venenatis, ut tristique nunc varius.</p>
+      <img src="https://via.placeholder.com/150" alt="Image">
     </div>
-    <div style="width: 100%; height: 100%; position: relative">
-        <img style="width: 1280px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/1280x640" />
-        <div style="width: 1280px; height: 640px; left: 0px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.30)"></div>
-        <div style="left: 425px; top: 223px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-            <div style="color: #F3EFFA; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">Welcome To</div>
-            <div style="text-align: center; color: white; font-size: 36px; font-family: Viga; font-weight: 400; letter-spacing: 7.20px; word-wrap: break-word">SISTEM INFORMASI<br/>NAMA DESA</div>
-            <div style="width: 120px; height: 35px; padding: 10px; background: #606FB1; border-radius: 4px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                <div style="color: white; font-size: 14px; font-family: Viga; font-weight: 400; word-wrap: break-word">Contact Us</div>
-            </div>
-        </div>
-        <div style="width: 300px; height: 300px; left: -0.81px; top: 433.13px; position: absolute; transform: rotate(32.22deg); transform-origin: 0 0; background: rgba(94, 111, 181, 0.50); border-radius: 9999px"></div>
-        <div style="width: 300px; height: 300px; left: 1262.41px; top: 231.04px; position: absolute; transform: rotate(-130.64deg); transform-origin: 0 0; background: rgba(94, 111, 181, 0.50); border-radius: 9999px"></div>
+  </div>
+</section>
+
+<section id="section3">
+  <div class="container">
+    <h2 class="section-title">Section 3</h2>
+    <div class="content animate__animated"> <!-- Tambahkan kelas animate__animated di sini -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mi in magna lacinia dapibus. Curabitur bibendum elit id ante venenatis, ut tristique nunc varius.</p>
+      <img src="https://via.placeholder.com/150" alt="Image">
     </div>
-    <div style="width: 100%; height: 100%; padding-top: 33px; padding-bottom: 32.29px; padding-left: 90.11px; padding-right: 99px; background: white; justify-content: flex-start; align-items: center; gap: 120.29px; display: inline-flex">
-        <div style="width: 448.60px; height: 451.71px; position: relative">
-            <div style="width: 150px; height: 120.07px; left: 220.89px; top: 106.07px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: linear-gradient(181deg, rgba(255, 255, 255, 0) 0%, #EEF2FD 100%); border-radius: 12px"></div>
-            <div style="width: 118.73px; height: 120.07px; left: 0px; top: 183.96px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: linear-gradient(181deg, rgba(255, 255, 255, 0) 0%, #EEF2FD 100%); border-radius: 12px"></div>
-            <div style="width: 163.56px; height: 63.78px; left: 254.11px; top: 249.44px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: linear-gradient(182deg, rgba(255, 255, 255, 0) 0%, #EEF2FD 100%); border-radius: 12px"></div>
-            <div style="width: 358.71px; height: 394.71px; left: 89.89px; top: 57px; position: absolute">
-                <div style="width: 358.71px; height: 394.71px; left: 0px; top: 0px; position: absolute">
-                    <div style="width: 150px; height: 150px; left: 73.50px; top: 106.07px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: #D9D9D9; border-radius: 12px"></div>
-                    <div style="width: 120px; height: 120px; left: 0px; top: 218.35px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: #D9D9D9; border-radius: 12px"></div>
-                    <div style="width: 120px; height: 120px; left: 189px; top: 218.35px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: #D9D9D9; border-radius: 12px"></div>
-                    <div style="width: 120px; height: 120px; left: 94.50px; top: 309.85px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: #D9D9D9; border-radius: 12px"></div>
-                </div>
-                <img style="width: 359px; height: 395px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/359x395" />
-            </div>
-        </div>
-        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
-            <div style="color: #5F72B3; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">ABOUT US</div>
-            <div><span style="color: #394570; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 3.20px; word-wrap: break-word">We Are Ready To<br/>Serve All The </span><span style="color: #5D6DB3; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 3.20px; word-wrap: break-word">Residents’</span><span style="color: #394570; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 3.20px; word-wrap: break-word"> Need</span></div>
-            <div style="width: 521px; color: #AFB0B2; font-size: 14px; font-family: Viga; font-weight: 400; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</div>
-            <div style="width: 100px; height: 40px; padding: 10px; background: #5F72B3; border-radius: 8px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                <div style="color: #F3EFFA; font-size: 14px; font-family: Viga; font-weight: 400; word-wrap: break-word">See more</div>
-            </div>
-        </div>
-    </div>
-    <div style="width: 100%; height: 100%; position: relative; background: #203588">
-        <div style="width: 74.44px; height: 45.46px; left: 100px; top: 289px; position: absolute">
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 43.36px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: -0px; top: 42.83px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 32.66px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 21.96px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 11.25px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.84px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: -0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: -0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 0.55px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: -0px; position: absolute; background: #F3EFFA"></div>
-        </div>
-        <div style="width: 74.44px; height: 45.46px; left: 1215px; top: 0px; position: absolute">
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 43.36px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: -0px; top: 42.83px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 32.66px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 21.96px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 11.25px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.84px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: -0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: -0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 0.55px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: -0px; position: absolute; background: #F3EFFA"></div>
-        </div>
-        <div style="width: 300px; height: 300px; left: 197.77px; top: 325.86px; position: absolute; transform: rotate(141.22deg); transform-origin: 0 0; background: linear-gradient(184deg, rgba(246, 93, 158, 0.50) 0%, rgba(98, 110, 177, 0.50) 100%); border-radius: 9999px"></div>
-        <div style="width: 200px; height: 193px; left: 956px; top: 82px; position: absolute">
-            <div style="width: 200px; height: 143px; left: 0px; top: 50px; position: absolute; background: rgba(255, 255, 255, 0.25); border-radius: 10px; backdrop-filter: blur(10px)"></div>
-            <div style="width: 200px; left: 0px; top: 137px; position: absolute; text-align: center; color: white; font-size: 10px; font-family: Viga; font-weight: 400; word-wrap: break-word">We always provide the latest information regarding activities, services and complaints.</div>
-            <div style="left: 30px; top: 110px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Viga; font-weight: 400; word-wrap: break-word">Updated Information</div>
-            <div style="width: 100px; height: 100px; left: 50px; top: 0px; position: absolute; background: #EC649A; border-radius: 10px"></div>
-            <img style="width: 82px; height: 82px; left: 59px; top: 9px; position: absolute" src="https://via.placeholder.com/82x82" />
-        </div>
-        <div style="width: 200px; height: 193px; left: 680px; top: 82px; position: absolute">
-            <div style="width: 200px; height: 143px; left: 0px; top: 50px; position: absolute; background: rgba(255, 255, 255, 0.25); border-radius: 10px; backdrop-filter: blur(10px)"></div>
-            <div style="width: 171px; left: 15px; top: 137px; position: absolute; text-align: center; color: white; font-size: 10px; font-family: Viga; font-weight: 400; word-wrap: break-word">We serve residents wholeheartedly, without exception</div>
-            <div style="left: 42px; top: 110px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Viga; font-weight: 400; word-wrap: break-word">Friendly Service</div>
-            <div style="width: 100px; height: 100px; left: 50px; top: 0px; position: absolute; background: #EC649A; border-radius: 10px"></div>
-            <img style="width: 82px; height: 82px; left: 59px; top: 9px; position: absolute" src="https://via.placeholder.com/82x82" />
-        </div>
-        <div style="width: 200px; height: 193px; left: 401px; top: 82px; position: absolute">
-            <div style="width: 200px; height: 143px; left: 0px; top: 50px; position: absolute; background: rgba(255, 255, 255, 0.25); border-radius: 10px; backdrop-filter: blur(10px)"></div>
-            <div style="width: 171px; left: 15px; top: 137px; position: absolute; text-align: center; color: white; font-size: 10px; font-family: Viga; font-weight: 400; word-wrap: break-word">We serve residents wholeheartedly, without exception</div>
-            <div style="left: 42px; top: 110px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Viga; font-weight: 400; word-wrap: break-word">Friendly Service</div>
-            <div style="width: 100px; height: 100px; left: 50px; top: 0px; position: absolute; background: #EC649A; border-radius: 10px"></div>
-            <img style="width: 82px; height: 82px; left: 59px; top: 9px; position: absolute" src="https://via.placeholder.com/82x82" />
-        </div>
-        <div style="width: 200px; height: 193px; left: 125px; top: 82px; position: absolute">
-            <div style="width: 200px; height: 143px; left: 0px; top: 50px; position: absolute; background: rgba(255, 255, 255, 0.25); border-radius: 10px; backdrop-filter: blur(10px)"></div>
-            <div style="width: 171px; left: 15px; top: 137px; position: absolute; text-align: center; color: white; font-size: 10px; font-family: Viga; font-weight: 400; word-wrap: break-word">We serve residents wholeheartedly, without exception</div>
-            <div style="left: 42px; top: 110px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Viga; font-weight: 400; word-wrap: break-word">Friendly Service</div>
-            <div style="width: 100px; height: 100px; left: 50px; top: 0px; position: absolute; background: #EC649A; border-radius: 10px"></div>
-            <img style="width: 82px; height: 82px; left: 59px; top: 9px; position: absolute" src="https://via.placeholder.com/82x82" />
-        </div>
-        <div style="left: 601px; top: 40px; position: absolute; color: white; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">SERVICE</div>
-    </div>
-    <div style="width: 100%; height: 100%; position: relative">
-        <div style="left: 312px; top: 82px; position: absolute; color: #5F72B3; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">CITIZENS</div>
-        <div style="width: 510px; left: 100px; top: 124px; position: absolute; text-align: center"><span style="color: #394570; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 3.20px; word-wrap: break-word">All village </span><span style="color: #5F72B3; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 3.20px; word-wrap: break-word">residents</span><span style="color: #394570; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 3.20px; word-wrap: break-word"> are recorded safely</span></div>
-        <div style="width: 510px; height: 170px; left: 670px; top: 82px; position: absolute">
-            <div style="width: 510px; height: 170px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-            <img style="width: 510px; height: 170px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/510x170" />
-            <div style="width: 510px; height: 50px; left: 0px; top: 120px; position: absolute; background: rgba(95, 114, 179, 0.50); backdrop-filter: blur(5px)"></div>
-            <div style="left: 30px; top: 134px; position: absolute; color: white; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">Data Penduduk Desa</div>
-            <div style="width: 52px; height: 15px; left: 438px; top: 137px; position: absolute; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-                <div style="color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px; word-wrap: break-word">See more</div>
-                <div style="width: 15px; height: 15px; position: relative">
-                    <div style="width: 8.75px; height: 5px; left: 3.12px; top: 5px; position: absolute; border: 2px #F3EFFA solid"></div>
-                </div>
-            </div>
-        </div>
-        <div style="width: 510px; height: 170px; left: 670px; top: 283px; position: absolute">
-            <div style="width: 510px; height: 170px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-            <img style="width: 510px; height: 170px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/510x170" />
-            <div style="width: 510px; height: 50px; left: 0px; top: 120px; position: absolute; background: rgba(95, 114, 179, 0.50); backdrop-filter: blur(5px)"></div>
-            <div style="left: 30px; top: 134px; position: absolute; color: white; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">Data Keluarga</div>
-            <div style="width: 52px; height: 15px; left: 438px; top: 137px; position: absolute; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-                <div style="color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px; word-wrap: break-word">See more</div>
-                <div style="width: 15px; height: 15px; position: relative">
-                    <div style="width: 8.75px; height: 5px; left: 3.12px; top: 5px; position: absolute; border: 2px #F3EFFA solid"></div>
-                </div>
-            </div>
-        </div>
-        <div style="width: 510px; height: 170px; left: 100px; top: 283px; position: absolute">
-            <div style="width: 510px; height: 170px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-            <img style="width: 510px; height: 170px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/510x170" />
-            <div style="width: 510px; height: 50px; left: 0px; top: 120px; position: absolute; background: rgba(95, 114, 179, 0.50); backdrop-filter: blur(5px)"></div>
-            <div style="left: 29px; top: 134px; position: absolute; color: white; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">Data Penerima Bantuan</div>
-            <div style="width: 52px; height: 15px; left: 438px; top: 137px; position: absolute; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-                <div style="color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px; word-wrap: break-word">See more</div>
-                <div style="width: 15px; height: 15px; position: relative">
-                    <div style="width: 8.75px; height: 5px; left: 3.12px; top: 5px; position: absolute; border: 2px #F3EFFA solid"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="width: 100%; height: 100%; position: relative; background: #203588">
-        <div style="width: 74.44px; height: 45.46px; left: 1106px; top: 455px; position: absolute">
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 42.81px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 43.36px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: -0px; top: 42.83px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 32.11px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 32.66px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 32.10px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 21.96px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 21.40px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.83px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 10.71px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 11.25px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: 10.68px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 71.80px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 59.84px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 47.87px; top: -0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 35.90px; top: -0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 23.94px; top: 0px; position: absolute; background: #F3EFFA"></div>
-            <div style="width: 2.64px; height: 2.64px; left: 11.57px; top: 0.55px; position: absolute; transform: rotate(-22.35deg); transform-origin: 0 0; background: #F3EFFA"></div>
-            <div style="width: 2.65px; height: 2.65px; left: 0px; top: -0px; position: absolute; background: #F3EFFA"></div>
-        </div>
-        <div style="width: 300px; height: 300px; left: 1262.63px; top: 289.58px; position: absolute; transform: rotate(40.30deg); transform-origin: 0 0; background: linear-gradient(184deg, rgba(246, 93, 158, 0.50) 0%, rgba(98, 110, 177, 0.50) 100%); border-radius: 9999px"></div>
-        <div style="left: 100px; top: 60px; position: absolute; color: #F3EFFA; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">GALLERY PHOTO</div>
-        <div style="width: 516px; height: 516px; left: -184px; top: 225px; position: absolute">
-            <div style="width: 516px; height: 516px; left: 0px; top: 0px; position: absolute; background: #C4C4C4; border-radius: 9999px; border: 7.12px #F8BB54 solid"></div>
-            <div style="width: 1464.26px; height: 831.95px; left: -149.94px; top: -86.68px; position: absolute">
-                <div style="width: 302.90px; height: 194.88px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 371.24px; height: 232.32px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 439.58px; height: 269.86px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 507.92px; height: 307.30px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 576.15px; height: 344.74px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 644.49px; height: 382.28px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 712.83px; height: 419.72px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 781.17px; height: 457.15px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 849.41px; height: 494.70px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 917.75px; height: 532.13px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 986.09px; height: 569.67px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 1054.42px; height: 607.11px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 1122.76px; height: 644.55px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 1191px; height: 682.09px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 1259.34px; height: 719.53px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 1327.68px; height: 756.97px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 1396.02px; height: 794.51px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-                <div style="width: 1464.26px; height: 831.95px; left: 0px; top: 0px; position: absolute; border: 8px rgba(243, 239, 250, 0.60) solid"></div>
-            </div>
-        </div>
-        <div style="width: 1280px; height: 498px; left: 0px; top: 0px; position: absolute; opacity: 0.10">
-            <div style="width: 1280px; height: 498px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-            <img style="width: 1280px; height: 498px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/1280x498" />
-        </div>
-        <div style="left: 100px; top: 125px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 50px; display: inline-flex">
-            <div style="width: 300px; height: 250px; position: relative">
-                <div style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute; background: #D9D9D9; border-radius: 10px"></div>
-                <img style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/300x250" />
-                <div style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(95, 114, 179, 0) 0%, rgba(95, 114, 179, 0.40) 100%)"></div>
-                <div style="left: 125px; top: 215px; position: absolute; color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px; word-wrap: break-word">Desember 2023</div>
-                <div style="left: 83px; top: 198px; position: absolute; color: white; font-size: 14px; font-family: Viga; font-weight: 400; letter-spacing: 2.10px; word-wrap: break-word">NAMA KEGIATAN</div>
-            </div>
-            <div style="width: 300px; height: 250px; position: relative">
-                <div style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute; background: #D9D9D9; border-radius: 10px"></div>
-                <img style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/300x250" />
-                <div style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(95, 114, 179, 0) 0%, rgba(95, 114, 179, 0.40) 100%)"></div>
-                <div style="left: 125px; top: 215px; position: absolute; color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px; word-wrap: break-word">Desember 2023</div>
-                <div style="left: 83px; top: 198px; position: absolute; color: white; font-size: 14px; font-family: Viga; font-weight: 400; letter-spacing: 2.10px; word-wrap: break-word">NAMA KEGIATAN</div>
-            </div>
-            <div style="width: 300px; height: 250px; position: relative">
-                <div style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute; background: #D9D9D9; border-radius: 10px"></div>
-                <img style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/300x250" />
-                <div style="width: 300px; height: 250px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, rgba(95, 114, 179, 0) 0%, rgba(95, 114, 179, 0.40) 100%)"></div>
-                <div style="left: 125px; top: 215px; position: absolute; color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px; word-wrap: break-word">Desember 2023</div>
-                <div style="left: 83px; top: 198px; position: absolute; color: white; font-size: 14px; font-family: Viga; font-weight: 400; letter-spacing: 2.10px; word-wrap: break-word">NAMA KEGIATAN</div>
-            </div>
-        </div>
-        <div style="width: 24px; height: 24px; left: 1133px; top: 238px; position: absolute">
-            <div style="width: 14px; height: 8px; left: 5px; top: 8px; position: absolute; border: 2px #F3EFFA solid"></div>
-        </div>
-    </div>
-    <div style="width: 100%; height: 100%; position: relative">
-        <div style="width: 1440px; height: 912px; left: 0px; top: -470px; position: absolute; opacity: 0.40; background: #F6F6F6">
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 672px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 696px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 720px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 744px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 768px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 792px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 816px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 840px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 864px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 888px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 912px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 936px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 960px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 984px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1008px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1032px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1056px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1080px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1104px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1128px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1152px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1176px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1200px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1224px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1248px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1272px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1296px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1320px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 1344px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 24px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 24px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 48px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 72px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 96px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 120px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 144px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 168px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 192px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 216px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 240px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 264px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 288px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 312px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 336px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 360px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 384px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 408px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 432px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 456px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 480px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 504px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 528px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 552px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 576px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 600px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 624px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 648px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 672px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 696px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 720px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 744px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 768px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 792px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 816px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 840px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 864px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 888px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 912px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 936px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 960px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 984px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1008px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1032px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1056px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1080px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1104px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1128px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1152px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1176px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1200px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1224px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1248px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1272px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1296px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1320px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1344px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1368px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1392px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1416px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1440px; top: 648px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 0px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: -24px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 0px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 24px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 48px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 72px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 96px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 120px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 144px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 168px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 192px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 216px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 240px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 264px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 288px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 312px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 336px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 360px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 384px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 408px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 432px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 456px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 480px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 504px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 528px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 552px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 576px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 600px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 624px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 1488px; height: 0px; left: 1464px; top: 648px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 24px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 24px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 48px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 72px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 96px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 120px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 144px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 168px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 192px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 216px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 240px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 264px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 288px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 312px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 336px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 360px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 384px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 408px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 432px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 456px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 480px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 504px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 528px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 552px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 576px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 600px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 624px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 648px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 672px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 696px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 720px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 744px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 768px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 792px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 816px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 840px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 864px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 888px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 912px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 936px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 960px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 984px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1008px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1032px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1056px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1080px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1104px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1128px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1152px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1176px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1200px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1224px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1248px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1272px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1296px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1320px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1344px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1368px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1392px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1416px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-            <div style="width: 720px; height: 0px; left: 1440px; top: -48px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid"></div>
-        </div>
-        <div style="left: 434px; top: 40px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-            <div style="color: #5F72B3; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">CONTACT US</div>
-            <div style="color: #394570; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 4.80px; word-wrap: break-word">Let’s Connect With Us</div>
-        </div>
-        <div style="padding-left: 40px; padding-right: 40px; padding-top: 20px; padding-bottom: 20px; left: 124px; top: 155px; position: absolute; background: white; box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.10); border-radius: 8px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
-            <img style="width: 412px; height: 412px" src="https://via.placeholder.com/412x412" />
-            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
-                <div style="width: 521px; height: 45px; padding: 10px; border-radius: 8px; border: 1px #394570 solid; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-                    <div style="color: rgba(57, 69, 112, 0.40); font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">yourname</div>
-                </div>
-                <div style="width: 521px; height: 45px; padding: 10px; border-radius: 8px; border: 1px #394570 solid; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-                    <div style="color: rgba(57, 69, 112, 0.40); font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">email</div>
-                </div>
-                <div style="width: 521px; height: 148px; padding: 10px; border-radius: 8px; border: 1px #394570 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-                    <div style="color: rgba(57, 69, 112, 0.40); font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">message...</div>
-                </div>
-                <div style="width: 521px; height: 45px; padding: 10px; background: #5F72B3; border-radius: 8px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                    <div style="color: #F3EFFA; font-size: 16px; font-family: Viga; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">Send message</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="width: 100%; height: 100%; position: relative">
-        <div style="width: 1280px; height: 500px; left: 0px; top: 0px; position: absolute">
-            <div style="width: 1280px; height: 500px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-            <img style="width: 1280px; height: 500px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/1280x500" />
-            <div style="width: 1280px; height: 500px; left: 0px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.20); backdrop-filter: blur(4px)"></div>
-        </div>
-        <div style="width: 1280px; height: 100px; padding-left: 426px; padding-right: 425px; left: 0px; top: 400px; position: absolute; background: rgba(0, 0, 0, 0.10); backdrop-filter: blur(10px); justify-content: center; align-items: center; display: inline-flex">
-            <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
-                <div style="justify-content: flex-start; align-items: center; gap: 5px; display: flex">
-                    <div style="color: white; font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">copyright @ 2024 | Created With</div>
-                    <div style="width: 20px; height: 20px; position: relative">
-                        <div style="width: 15.01px; height: 13.34px; left: 2.49px; top: 3.32px; position: absolute; border: 2px #EC649A solid"></div>
-                    </div>
-                </div>
-                <div style="color: white; font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Deam Team</div>
-            </div>
-        </div>
-        <div style="left: 593px; top: 244px; position: absolute; color: white; font-size: 32px; font-family: Viga; font-weight: 400; letter-spacing: 4.80px; word-wrap: break-word">LOGO</div>
-        <div style="left: 324px; top: 307px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
-            <div style="color: white; font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Home</div>
-            <div style="color: white; font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">About</div>
-            <div style="color: white; font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Penduduk</div>
-            <div style="color: white; font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Service</div>
-            <div style="color: white; font-size: 20px; font-family: Viga; font-weight: 400; word-wrap: break-word">Organization Structure</div>
-        </div>
-    </div>
+  </div>
+</section>
+
+<script>
+  // Fungsi untuk mengecek apakah elemen berada dalam viewport saat ini
+  function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Fungsi untuk menambahkan kelas animasi saat elemen berada dalam viewport
+  function addAnimationClass() {
+    var animatedElements = document.querySelectorAll('.animate__animated');
+    animatedElements.forEach(function(element) {
+      if (isElementInViewport(element)) {
+        element.classList.add('animate__backInLeft');
+      }
+    });
+  }
+
+  // Tambahkan event listener untuk memanggil fungsi addAnimationClass saat scrolling
+  window.addEventListener('scroll', addAnimationClass);
+
+  // Panggil fungsi addAnimationClass setiap kali halaman di-scroll
+  window.addEventListener('scroll', addAnimationClass);
+</script>
+
 </body>
 </html>
+
