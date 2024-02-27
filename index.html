@@ -71,19 +71,23 @@
 
     <!-- About Start -->
     <section id="about" class="section">
-        <div class="container">
-            <div class="row justify-content-center fs-5">
-                <div class="col-md-4">
-                    <h1 class="animated-text">Selamat Datang!</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odit amet tenetur similique cupiditate hic quam deleniti earum nihil ea.</p>
+        <div class="container ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center judul">ABOUT US</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="d-flex flex-column align-items-start gap-1" style="width: 522;">
+            </div>
+            <div class="row fs-5 ">
+                <div class="col-md-6 border text-center ">
+                    <img class="border" src="assets/logo al mahabbah.png" alt="">
+                </div>
+                <div class="col-md-6 ">
+                    <div class="d-flex flex-column align-items-start gap-1 mt-5" style="width: 522;">
                         <!-- Konten di sini -->
-                        <p class="judul">ABOUT US</p>
-                        <p class="tagline">We Are Ready To Serve All The Residents' Need</p>
+                        <!-- <p class="judul">ABOUT US</p> -->
+                        <p class="tagline animated-text">We Are Ready To Serve All The Residents' Need</p>
                         <p class="isi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, velit. At illo libero praesentium itaque temporibus architecto, veritatis reiciendis, eius laborum illum repellat dolor nobis ipsa atque cupiditate dignissimos porro?</p>
-                        <button class="btn btn-primary">See More</button>
+                        <!-- <button class="btn btn-primary">See More</button> -->
                     </div>
                 </div>
             </div>
@@ -632,24 +636,24 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    var animatedText = document.querySelector('.animated-text');
+            var animatedText = document.querySelector('.animated-text');
 
-    window.addEventListener('scroll', function() {
-        if (isInViewport(animatedText)) {
-            animatedText.classList.add('animated');
-        }
-    });
+            window.addEventListener('scroll', function() {
+                if (isInViewport(animatedText)) {
+                    animatedText.classList.add('animated');
+                }
+            });
 
-    function isInViewport(element) {
-        var rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-});
+            function isInViewport(element) {
+                var rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+        });
 
     </script>
 
