@@ -154,8 +154,8 @@
 /* Contact Us Start */
 
 .sosmed {
-    width: auto;
-    height: 412px;
+    width: 100%;
+    height: auto;
 }
 
 .text-contact {
@@ -295,7 +295,7 @@
 @media (max-width: 767.98px) { 
     iframe {
         height: 300px;
-    }
+    }   
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
