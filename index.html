@@ -62,11 +62,7 @@
                     <p class="text-lead text-light">Welcome To</p>
                     <h1 class="display-4 text-hero text-light animated-text-hero">SISTEM INFORMASI</h1>
                     <h1 class="display-4 text-hero text-light animated-text-hero">KAMPUNG AL MAHABBAH</h1>
-                    <a href="#contactUs"class="btn btn-primary">Contact Us</a>
-                    
-                        
-                    
-                    
+                    <a href="#contactUs"class="btn btn-primary">Contact Us</a>  
                 </div>
             </div>
         </div>
@@ -317,19 +313,19 @@
 
             <div class="row text-center mt-5">
                 <div class="col-md-6">
-                    <h3>Follow Akun Sosial Media Kami</h3>
+                    <h3 class="text-contact">Follow Akun Sosial Media Kami</h3>
                     <div>
                         <img src="assets/ig.png" class="sosmed" alt="sosmed">
                     </div>
                     <div class="mt-2">
-                        <h5><a href="https://www.instagram.com/kampung.almahabbah" style="text-decoration: none; color: #606FB1;"><i class="fa-brands fa-instagram"></i> kampung.almahabbah</a></h5>
-                        <h5><a href="https://www.tiktok.com/@info.kampungalmahabbah" style="text-decoration: none; color: #606FB1;"><i class="fa-brands fa-tiktok"></i> Tiktok</a></h5>
-                        <h5><a href="https://www.facebook.com/Al Mahabbah" style="text-decoration: none; color: #606FB1;"><i class="fa-brands fa-facebook"></i> Al Mahabbah </a></h5>
+                        <h5><a href="https://www.instagram.com/kampung.almahabbah" style="text-decoration: none; color: #ac4226;"><i class="fa-brands fa-instagram"></i> kampung.almahabbah</a></h5>
+                        <h5><a href="https://www.tiktok.com/@info.kampungalmahabbah" style="text-decoration: none; color: #ac4226;"><i class="fa-brands fa-tiktok"></i> Tiktok</a></h5>
+                        <h5><a href="https://www.facebook.com/Al Mahabbah" style="text-decoration: none; color: #ac4226;"><i class="fa-brands fa-facebook"></i> Al Mahabbah </a></h5>
                 
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Lokasi Kampung Al Mahabbah</h3>
+                    <h3 class="text-contact">Lokasi Kampung Al Mahabbah</h3>
                     <div id="map"></div>
                 </div>
             </div>
@@ -455,7 +451,7 @@
                         colorByPoint: true,
                         data: [
                             {
-                                name: 'Laki-lakli',
+                                name: 'Laki-laki',
                                 y: 54.00
                             },
                             {
@@ -624,14 +620,14 @@
         marker.bindPopup("<b>Halo!</b><br>Selamat datang di kampung al mahabbah.").openPopup();
     </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var animatedTexts = document.querySelectorAll('.animated-text-hero');
-        animatedTexts.forEach(function(element) {
-            element.classList.add('animated-hero');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var animatedTexts = document.querySelectorAll('.animated-text-hero');
+            animatedTexts.forEach(function(element) {
+                element.classList.add('animated-hero');
+            });
         });
-    });
-</script>
+    </script>
 
 
     <script>

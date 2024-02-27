@@ -36,7 +36,7 @@
 }
 
 .navbar-brand span {
-    color: #394570;
+    color: #f38332;
     font-size: 28px;
     font-family: "Viga", sans-serif;
     font-weight: 400;
@@ -102,7 +102,7 @@
 }
 
 .tagline {
-    color: #394570;
+    color: #f38332;
     font-family: "Viga", sans-serif;
     font-size: 32px;
     font-style: normal;
@@ -123,7 +123,7 @@
 
 /* Service Start */
 #service {
-    background-color: #203588;
+    background-color: #f38332;
 }
 
 
@@ -132,7 +132,7 @@
 
 /* Citizens Start */
 .title-citizens {
-    color: #5F72B3;
+    color: #ac4226;
     font-family: "Viga", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -158,8 +158,12 @@
     height: 412px;
 }
 
+.text-contact {
+    color: #f38332;
+}
+
 .lets {
-    color: #394570;
+    color: #ac4226;
     font-size: 32px;
     font-family: "Viga", sans-serif;
     font-weight: 400;
@@ -183,17 +187,12 @@
 /* Contact Us End */
 
 /* Footer Start */
-/* footer {
-    height: 400px;
-    background: url(footer.png) lightgray 50% / cover no-repeat;
-    width: 100%;
-    height: 500px;
-} */
+
 
 /* Footer End */
 
 .btn-primary {
-   background-color: #606FB1;
+   background-color: #f38332;
    font-family: "Viga", sans-serif;
    font-size: 14px;
    font-weight: 400;
@@ -202,11 +201,11 @@
 }
 
 .btn-primary:hover {
-    background-color: #394570;
+    background-color: #e78e4a;
 }
 
 .judul {
-    color: #5F72B3;
+    color: #ac4226;
     font-family: "Viga", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -215,8 +214,6 @@
     letter-spacing: 2.4px;
 }
 
-
- 
 .section {
     padding-top: 6rem;
     /* padding-top: 5rem; */
@@ -246,7 +243,7 @@
 }
 
 #btnBackToTop:hover {
-    background-color: #394570;
+    background-color: #e78e4a;
 }
 
 
