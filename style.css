@@ -286,4 +286,8 @@
     .navbar-brand span {
         font-size: 22px;
     }
+
+    iframe {
+        height: 200px;
+    }
 }
