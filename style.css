@@ -274,3 +274,16 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 22px; /* Ubah ukuran font sesuai kebutuhan Anda */
+    }
+
+    .navbar-brand span {
+        font-size: 22px;
+    }
+}
