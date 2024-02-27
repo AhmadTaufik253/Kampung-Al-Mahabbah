@@ -18,7 +18,7 @@
     transform: translateX(-50%); /* Geser garis bawah ke kiri agar berada di tengah */
     width: 0; /* Atur lebar garis bawah menjadi 0 untuk memulai */
     height: 2px; /* Atur tinggi garis bawah */
-    background-color: #5F72B3; /* Atur warna garis bawah */
+    background-color: #f38332; /* Atur warna garis bawah */
     transition: width 0.3s ease; /* Animasi untuk perubahan lebar */
 }
 
@@ -145,7 +145,7 @@
 
 /* Gallery Start */
 #gallery {
-    background-color: #203588;
+    background-color: #ac4226 ;
     /* background: url(backgroundSection.png) lightgray 50% / cover no-repeat; */
 }
 /* Gallery End */
@@ -234,7 +234,7 @@
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #606FB1;
+    background-color: #f38332;
     color: white;
     cursor: pointer;
     border-radius: 10px;
