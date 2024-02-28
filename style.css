@@ -148,6 +148,11 @@
     background-color: #ac4226 ;
     /* background: url(backgroundSection.png) lightgray 50% / cover no-repeat; */
 }
+
+.img-gallery img{
+    border: 1px black;
+    border-radius: 5px;
+}
 /* Gallery End */
 
 
