@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
+.navbar-nav .nav-item .nav-link.active {
+    color: #f38332; /* Ganti dengan warna yang diinginkan */
+}
+
+/* Warna untuk nav-link saat dihover */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f38332; /* Ganti dengan warna yang diinginkan saat dihover */
+}
+
+/* Warna untuk dropdown item saat di-klik */
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover {
+    color: white; /* Ganti dengan warna teks yang diinginkan saat di-klik */
+    background-color: #f38332; /* Ganti dengan warna latar belakang yang diinginkan saat di-klik */
+}
+
 /* Navbar Start */
 .navbar {
     background: rgba(0, 0, 0, 0.25);
@@ -144,7 +160,7 @@
 
 
 /* Gallery Start */
-#gallery {
+#galleryNav {
     background-color: #ac4226 ;
     /* background: url(backgroundSection.png) lightgray 50% / cover no-repeat; */
 }
@@ -153,6 +169,35 @@
     border: 1px black;
     border-radius: 5px;
 }
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .page-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+
 /* Gallery End */
 
 
