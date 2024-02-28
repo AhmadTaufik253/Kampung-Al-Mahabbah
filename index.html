@@ -197,23 +197,23 @@
     <!-- Gallery Start -->
     <section id="gallery" class="section">
         <div class="container">
-            <div class="row border">
-                <div class="col border">
+            <div class="row">
+                <div class="col">
                     <h4 class="text-light text-center">Gallery Photo</h4>
                 </div>
             </div>
             <div class="row mt-3 border">
                 <div class="col-xl-3 col-lg-4 col-md-6 border">
-                    <!-- <div class="card" style="width: 300px; height: 250px; position: relative;">
+                    <div class="card border border-dark" style="width: 300px; height: 250px; ">
                         <img src="assets/tesss.jpg" class="card-img-top" alt="Placeholder image">
                         <div class="card-overlay border border-dark"></div>
-                        <div class="card-body border border-dark" style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">
+                        <div class="card-body border border-dark" style=" bottom: 0; left: 0; width: 100%; text-align: center;">
                             <h5 class="card-title border" style="color: black; font-size: 14px; font-family: Viga; font-weight: 400; letter-spacing: 2.10px;">NAMA KEGIATAN</h5>
                             <p class="card-text border" style="color: black; font-size: 10px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px;">February 2024</p>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 border">
+                <div class="col-xl-3 col-lg-4 col-md-6 border">
                     <div class="card" style="width: 300px; height: 250px; position: relative;">
                         <img src="https://via.placeholder.com/300x250" class="card-img-top" alt="Placeholder image">
                         <div class="card-overlay"></div>
@@ -222,7 +222,27 @@
                             <p class="card-text" style="color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px;">February 2024</p>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 border">
+                    <div class="card" style="width: 300px; height: 250px; position: relative;">
+                        <img src="https://via.placeholder.com/300x250" class="card-img-top" alt="Placeholder image">
+                        <div class="card-overlay"></div>
+                        <div class="card-body" style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">
+                            <h5 class="card-title" style="color: white; font-size: 14px; font-family: Viga; font-weight: 400; letter-spacing: 2.10px;">NAMA KEGIATAN</h5>
+                            <p class="card-text" style="color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px;">February 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 border">
+                    <div class="card" style="width: 300px; height: 250px; position: relative;">
+                        <img src="https://via.placeholder.com/300x250" class="card-img-top" alt="Placeholder image">
+                        <div class="card-overlay"></div>
+                        <div class="card-body" style="position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">
+                            <h5 class="card-title" style="color: white; font-size: 14px; font-family: Viga; font-weight: 400; letter-spacing: 2.10px;">NAMA KEGIATAN</h5>
+                            <p class="card-text" style="color: white; font-size: 6px; font-family: Viga; font-weight: 400; letter-spacing: 0.90px;">February 2024</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -352,24 +372,20 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6 border">
+                <div class="col-md-6">
                     <div class="">
                         <h3 class="text-contact">Follow Akun Sosial Media Kami</h3>
                     </div>
-                    <div class="border">
+                    <div class="">
                         <img src="assets/sosmed-removebg-preview.png" class="sosmed" alt="sosmed">
                     </div>
-                    <div class="mt-2 border">
-                        <ul class="list-unstyled">
+                    <div class="mt-2 ">
+                        <ul class="list-unstyled ms-3 mt-2 list-sosmed">
                             <li><a href="https://www.facebook.com/Al Mahabbah" style="text-decoration: none; color: #ac4226;"><i class="fa-brands fa-facebook"></i> Al Mahabbah </a></li>
                             <li><a href="https://www.instagram.com/kampung.almahabbah" style="text-decoration: none; color: #ac4226;"><i class="fa-brands fa-square-instagram"></i> kampung.almahabbah</a></li>
                             <li><a href="https://www.tiktok.com/@info.kampungalmahabbah" style="text-decoration: none; color: #ac4226;"><i class="fa-brands fa-tiktok"></i> @info.kampungalmahabbah</a></li>
                             <li><a href="#" style="text-decoration: none; color: #ac4226;"><i class="fa-solid fa-envelope"></i> info.kampungalmahabbah@gmail.com</a></li>
                         </ul>
-                        
-                        
-                        
-                        
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -500,11 +516,11 @@
                         data: [
                             {
                                 name: 'Laki-laki',
-                                y: 55.00
+                                y: 45.00
                             },
                             {
                                 name: 'Perempuan',
-                                y: 45.00
+                                y: 55.00
                             },
                         ]
                     }
@@ -521,7 +537,7 @@
                     text: 'Usia Penduduk'
                 },
                 tooltip: {
-                    valueSuffix: '%'
+                    // valueSuffix: '%'
                 },
                 plotOptions: {
                     series: {
@@ -530,7 +546,8 @@
                         dataLabels: [{
                             enabled: true,
                             distance: 20
-                        }, {
+                        }, 
+                        {
                             enabled: true,
                             distance: -40,
                             format: '{point.percentage:.2f}%',
@@ -549,24 +566,20 @@
                 },
                 series: [
                     {
-                        name: 'Percentage',
+                        name: 'Jumlah',
                         colorByPoint: true,
                         data: [
                             {
-                                name: '17 - 24 Tahun',
-                                y: 42.00
+                                name: '< 17 Tahun',
+                                y: 90
                             },
                             {
-                                name: '25 - 30 Tahun',
-                                y: 12.00
+                                name: '> 17 Tahun',
+                                y: 197
                             },
                             {
-                                name: '31 - 40 Tahun',
-                                y: 26.00
-                            },
-                            {
-                                name: '> 40 Tahun',
-                                y: 20.00
+                                name: 'Lansia',
+                                y: 20
                             },
                         ]
                     }
@@ -575,6 +588,7 @@
                     enabled: false
                 },
             });
+
             Highcharts.chart('chart-container-3', {
                 chart: {
                     type: 'pie'
@@ -585,10 +599,6 @@
                 tooltip: {
                     valueSuffix: '%'
                 },
-                // subtitle: {
-                //     text:
-                //     'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>'
-                // },
                 plotOptions: {
                     series: {
                         allowPointSelect: true,
@@ -624,8 +634,6 @@
                             },
                             {
                                 name: 'Karyawan Swasta',
-                                // sliced: true,
-                                // selected: true,
                                 y: 25.00
                             },
                             {

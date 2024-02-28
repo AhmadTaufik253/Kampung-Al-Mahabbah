@@ -112,9 +112,9 @@
 }
 
 .isi {
-    color: #AFB0B2;
+    color: #444;
     font-family: "Viga", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -156,6 +156,10 @@
 .sosmed {
     width: 100%;
     height: auto;
+}
+
+.list-sosmed {
+    font-size: 18px;
 }
 
 .text-contact {
@@ -289,6 +293,14 @@
 
     .tagline {
         font-size: 22px;
+    }
+
+    .text-lead {
+        font-size: 20px;
+    }
+
+    .text-hero {
+        font-size: 15px;
     }
 
     iframe {
