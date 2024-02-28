@@ -98,13 +98,13 @@
 </html>
  -->
 
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagination Example</title>
-  <!-- Bootstrap CSS -->
+  Bootstrap CSS
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -112,7 +112,7 @@
   <div class="container">
     <h2 class="my-4">Data List</h2>
     <ul class="list-group" id="dataList">
-      <!-- List of items -->
+      List of items
       <li class="list-group-item">Item 1</li>
       <li class="list-group-item">Item 2</li>
       <li class="list-group-item">Item 3</li>
@@ -125,7 +125,7 @@
       <li class="list-group-item">Item 10</li>
     </ul>
   
-    <!-- Pagination -->
+    Pagination
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center mt-4" id="pagination">
         <li class="page-item disabled" id="previous">
@@ -141,7 +141,7 @@
     </nav>
   </div>
 
-  <!-- Bootstrap JS -->
+  Bootstrap JS
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -196,4 +196,60 @@
 </body>
 </html>
 
+ -->
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery dengan FancyBox</title>
+    <!-- CSS FancyBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript FancyBox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <style>
+        /* CSS untuk mengatur tata letak galeri */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery a {
+            margin: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gallery dengan FancyBox</h2>
+
+    <!-- Galeri gambar -->
+    <div class="gallery">
+        <a href="https://via.placeholder.com/800x600" data-fancybox="gallery" data-caption="Deskripsi Gambar 1">
+            <img src="https://via.placeholder.com/200" alt="Deskripsi Gambar 1">
+        </a>
+        <a href="https://via.placeholder.com/800x600" data-fancybox="gallery" data-caption="Deskripsi Gambar 2">
+            <img src="https://via.placeholder.com/200" alt="Deskripsi Gambar 2">
+        </a>
+        <!-- Tambahkan gambar-gambar lain di sini -->
+    </div>
+
+    <!-- Inisialisasi FancyBox -->
+    <script>
+        $(document).ready(function() {
+            $('[data-fancybox="gallery"]').fancybox({
+                // Opsi konfigurasi tambahan disini
+            });
+        });
+    </script>
+</body>
+</html>
