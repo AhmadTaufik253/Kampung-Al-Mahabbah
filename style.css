@@ -236,6 +236,7 @@
 
 #map {
     height: 412px;
+    border-radius: 10px;
 }
 
 .btn-primary {
@@ -374,6 +375,9 @@
     .animated-text.animated {
         opacity: 1;
         transform: translateX(0);
+    }
+    .list-sosmed {
+        font-size: 16px;
     }
 }
 
