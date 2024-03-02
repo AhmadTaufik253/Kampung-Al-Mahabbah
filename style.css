@@ -135,6 +135,21 @@
     font-weight: 400;
     line-height: normal;
 }
+
+#logo {
+    opacity: 0; 
+    animation: fadeInAnimation 1.5s ease forwards; 
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* About End */
 
 /* Service Start */
