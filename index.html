@@ -51,11 +51,11 @@
             <li class="nav-item">
               <a class="nav-link" id="menuAbout" href="#about">About</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" id="menuCitizens" href="#citizens">Citizens</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" id="menuGallery" href="#galleryNav">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="menuDenah" href="#denah">Denah</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="contact" href="#contactUs">Contact</a>
@@ -112,64 +112,12 @@
                 Kampung Al Mahabbah adalah salah satu dusun yang ada di Desa Tlogotirto, Kabupaten Demak, Provinsi Jawa Tengah, Indonesia. Dusun ini merupakan dusun terpadat dari beberapa dusun yang ada. Sebagian besar mata pencaharian
                 warga Al Mahabbah bersifat agraris.
               </p>
-              <!-- <button class="btn btn-primary">See More</button> -->
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- About End -->
-
-    <!-- Service Start -->
-    <!-- <section id="service" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="text-center" style="color: white; font-size: 16px; font-family: 'Viga', sans-serif; font-weight: 400; letter-spacing: 2.40px; word-wrap: break-word">SERVICE</div>
-                </div>
-            </div>
-            <div class="row mt-4 border">
-                <div class="col-md-3 border position-relative">
-                    <div style="width: 200px; height: 150px; left: 0px; top: 50px; position: absolute; background: rgba(255, 255, 255, 0.25); border-radius: 10px; backdrop-filter: blur(10px)"></div>
-                    <p style="width: 171px; left: 15px; top: 137px; position: absolute; text-align: center; color: white; font-size: 10px; font-family: Viga; font-weight: 400; word-wrap: break-word">We serve residents wholeheartedly, without exception</p>
-                    <p style="left: 42px; top: 110px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Viga; font-weight: 400; word-wrap: break-word">Friendly Service</p>
-                    <div style="width: 100px; height: 100px; left: 50px; top: 0px; position: absolute; background: #EC649A; border-radius: 10px"></div>
-                    <img style="width: 82px; height: 82px; left: 59px; top: 9px; position: absolute" src="icon service.png" />
-                </div>
-                <div class="col-md-3 border position-relative">
-                    <div class="position-absolute " style="width: 200px; height: 150px; left: 0px; top: 50px; background: rgba(255, 255, 255, 0.25); border-radius: 10px; backdrop-filter: blur(10px)"></div>
-                    <p style="width: 171px; left: 15px; top: 137px; position: absolute; text-align: center; color: white; font-size: 10px; font-family: Viga; font-weight: 400; word-wrap: break-word">We serve residents wholeheartedly, without exception</p>
-                    <p style="left: 42px; top: 110px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Viga; font-weight: 400; word-wrap: break-word">Friendly Service</p>
-                    <div style="width: 100px; height: 100px; left: 50px; top: 0px; position: absolute; background: #EC649A; border-radius: 10px"></div>
-                    <img style="width: 82px; height: 82px; left: 59px; top: 9px; position: absolute" src="icon service.png" />
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Service End -->
-
-    <!-- Citizens Start -->
-    <!-- <section id="citizens" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="text-center title-citizens">Statistik Data Penduduk</div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-sm-6 col-md-4">
-            <div id="chart-container-1" style="height: 400px"></div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div id="chart-container-2" style="height: 400px"></div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div id="chart-container-3" style="height: 400px"></div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Citizens End -->
 
     <!-- Gallery Start -->
     <section id="galleryNav" class="section">
@@ -327,7 +275,7 @@
     <!-- Denah End -->
 
     <!-- Contact Us Start -->
-    <section id="contactUs" class="section">
+    <section id="contactUs" class="section"  style="margin-bottom: 40px;">
       <div class="container">
         <div class="row text-center mb-1">
           <div class="col">
@@ -505,202 +453,6 @@
               $('.nav-link[href="#' + targetId + '"]').addClass("active");
             }
           });
-        });
-      });
-    </script>
-
-    <!-- Chart -->
-    <script>
-      // JavaScript code to create the chart
-      document.addEventListener("DOMContentLoaded", function () {
-        // Create the chart
-        Highcharts.chart("chart-container-1", {
-          chart: {
-            type: "pie",
-          },
-          title: {
-            text: "Jenis Kelamin Penduduk",
-          },
-          tooltip: {
-            valueSuffix: "%",
-          },
-          plotOptions: {
-            series: {
-              allowPointSelect: true,
-              cursor: "pointer",
-              dataLabels: [
-                {
-                  enabled: true,
-                  distance: 20,
-                },
-                {
-                  enabled: true,
-                  distance: -40,
-                  format: "{point.percentage:.2f}%",
-                  style: {
-                    fontSize: "1.2em",
-                    textOutline: "none",
-                    opacity: 0.7,
-                  },
-                  filter: {
-                    operator: ">",
-                    property: "percentage",
-                    value: 10,
-                  },
-                },
-              ],
-            },
-          },
-          series: [
-            {
-              name: "Percentage",
-              colorByPoint: true,
-              data: [
-                {
-                  name: "Laki-laki",
-                  y: 45.0,
-                  color: "#ac4226",
-                },
-                {
-                  name: "Perempuan",
-                  y: 55.0,
-                  color: "#e78e4a",
-                },
-              ],
-            },
-          ],
-          credits: {
-            enabled: false,
-          },
-        });
-        Highcharts.chart("chart-container-2", {
-          chart: {
-            type: "pie",
-          },
-          title: {
-            text: "Usia Penduduk",
-          },
-          tooltip: {
-            // valueSuffix: '%'
-          },
-          plotOptions: {
-            series: {
-              allowPointSelect: true,
-              cursor: "pointer",
-              dataLabels: [
-                {
-                  enabled: true,
-                  distance: 20,
-                },
-                {
-                  enabled: true,
-                  distance: -40,
-                  format: "{point.percentage:.2f}%",
-                  style: {
-                    fontSize: "1.2em",
-                    textOutline: "none",
-                    opacity: 0.7,
-                  },
-                  filter: {
-                    operator: ">",
-                    property: "percentage",
-                    value: 10,
-                  },
-                },
-              ],
-            },
-          },
-          series: [
-            {
-              name: "Jumlah",
-              colorByPoint: true,
-              data: [
-                {
-                  name: "< 17 Tahun",
-                  y: 90,
-                  color: "#ac4226",
-                },
-                {
-                  name: "> 17 Tahun",
-                  y: 197,
-                  color: "#e78e4a",
-                },
-                {
-                  name: "Lansia",
-                  y: 20,
-                  color: "#f38332",
-                },
-              ],
-            },
-          ],
-          credits: {
-            enabled: false,
-          },
-        });
-
-        Highcharts.chart("chart-container-3", {
-          chart: {
-            type: "pie",
-          },
-          title: {
-            text: "Pekerjaan",
-          },
-          tooltip: {
-            valueSuffix: "%",
-          },
-          plotOptions: {
-            series: {
-              allowPointSelect: true,
-              cursor: "pointer",
-              dataLabels: [
-                {
-                  enabled: true,
-                  distance: 20,
-                },
-                {
-                  enabled: true,
-                  distance: -40,
-                  format: "{point.percentage:.1f}%",
-                  style: {
-                    fontSize: "1.2em",
-                    textOutline: "none",
-                    opacity: 0.7,
-                  },
-                  filter: {
-                    operator: ">",
-                    property: "percentage",
-                    value: 10,
-                  },
-                },
-              ],
-            },
-          },
-          series: [
-            {
-              name: "Percentage",
-              colorByPoint: true,
-              data: [
-                {
-                  name: "Petani",
-                  y: 55.0,
-                  color: "#ac4226",
-                },
-                {
-                  name: "Karyawan Swasta",
-                  y: 25.0,
-                  color: "#e78e4a",
-                },
-                {
-                  name: "Pegawai Swasta",
-                  y: 20.0,
-                  color: "#f38332",
-                },
-              ],
-            },
-          ],
-          credits: {
-            enabled: false,
-          },
         });
       });
     </script>
