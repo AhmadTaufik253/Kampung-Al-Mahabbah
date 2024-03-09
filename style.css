@@ -386,7 +386,11 @@
         font-size: 15px;
     }
 
-    iframe {
+    #denah-desa {
+        height: 300px;
+    }
+
+    #video-profile {
         height: 300px;
     }
 
@@ -406,25 +410,39 @@
 }
 
 @media (max-width: 767.98px) { 
-    iframe {
-        height: 300px;
+    #denah-desa {
+        height: 170px;
     }   
+
+    #video-profile {
+        height: 300px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    iframe {
-        height: 218px;
+    #denah-desa {
+        height: 220px;
+    }
+    #video-profile {
+        height: 400px;
     }
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) { 
-    iframe {
-        height: 285px;
+    #denah-desa {
+        height: 290px;
+    }
+    #video-profile {
+        height: 510px;
     }
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) { 
-    iframe {
+    #denah-desa {
         height: 337px;
+    }
+    
+    #video-profile {
+        height: 700px;
     }
 }
