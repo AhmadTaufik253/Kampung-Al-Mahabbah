@@ -407,6 +407,10 @@
     .list-sosmed {
         font-size: 16px;
     }
+
+    footer {
+        font-size: 13px;
+    };
 }
 
 @media (max-width: 767.98px) { 
